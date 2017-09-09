@@ -53,7 +53,7 @@
 #define PCM_DEVICE 0
 #define PCM_DEVICE_VOICE 1
 #define PCM_DEVICE_SCO 2
-#define PCM_DEVICE_DEEP 8
+#define PCM_DEVICE_DEEP 3
 #define PCM_DEVICE_PLAYBACK 6
 
 #define MIXER_CARD 0
@@ -75,8 +75,8 @@ struct pcm_config pcm_config = {
 struct pcm_config pcm_config_deep = {
     .channels = 2,
     .rate = 48000,
-    .period_size = 960,
-    .period_count = 5,
+    .period_size = 1024,
+    .period_count = 2,
     .format = PCM_FORMAT_S16_LE,
 };
 

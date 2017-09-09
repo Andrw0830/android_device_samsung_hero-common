@@ -4,6 +4,7 @@
 	<pcmdai playback_link="6" />
 	<pcmdai playback_jam_link="7" />
 	<pcmdai playback_deep_link="8" />
+	<pcmdai playback_offload_link="11" />
 	<pcmdai capture_link="0" />
 	<pcmdai baseband_link="1" />
 	<pcmdai bluetooth_link="2" />
@@ -251,10 +252,6 @@
 		<ctl name="AIF3TX2 Input 1" value="ISRC2DEC2" />
 		<ctl name="ISRC2DEC1 Input" value="AIF1RX1" />
 		<ctl name="ISRC2DEC2 Input" value="AIF1RX2" />
-	</path>
-
-	<path name="gain-media-speaker">
-		<path name="media-speaker" />
 	</path>
 
 	<path name="media-speaker-bt-sco-headset">
@@ -1434,12 +1431,8 @@
 		<path name="media-mic" />
 	</path>
 
-	<path name="gain-recording-mic">
-		<path name="main-mic" />
-	</path>
-
 	<path name="recording-headset-mic">
-		<path name="main-mic" />
+		<path name="media-headset-mic" />
 	</path>
 
 	<path name="recording-headphone-mic">
