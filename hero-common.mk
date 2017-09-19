@@ -169,7 +169,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
 	$(DEVICE_PATH)/configs/media/media_codecs.xml:system/etc/media_codecs.xml \
 	$(DEVICE_PATH)/configs/media/media_codecs_performance.xml:system/etc/media_codecs_performance.xml \
-	$(DEVICE_PATH)/configs/media/media_profiles.xml:system/etc/media_profiles.xml
+	$(DEVICE_PATH)/configs/media/media_profiles.xml:system/etc/media_profiles.xml \
+	$(DEVICE_PATH)/configs/media/somxreg.conf:system/etc/somxreg.conf
 
 # NFC
 PRODUCT_COPY_FILES += \

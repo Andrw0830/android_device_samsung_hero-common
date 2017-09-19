@@ -107,3 +107,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # WIFI
 PRODUCT_PROPERTY_OVERRIDES += \
 	wifi.interface=wlan0
+
+# Properties
+PRODUCT_PROPERTY_OVERRIDES += \
+	media.sf.omx-plugin=libffmpeg_omx.so,libsomxcore.so
