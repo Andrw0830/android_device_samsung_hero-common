@@ -107,6 +107,7 @@ BOARD_HARDWARE_CLASS += device/samsung/hero-common/cmhw
 
 # HWCServices
 BOARD_USES_HWC_SERVICES := true
+BOARD_USE_S3D_SUPPORT := true
 
 # Bluetooth
 BOARD_HAVE_BLUETOOTH := true
