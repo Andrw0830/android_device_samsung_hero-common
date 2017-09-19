@@ -78,13 +78,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	ro.nfc.sec_hal=true \
 	ro.nfc.port="I2C"
 
-# Performance += \
+# Performance
 PRODUCT_PROPERTY_OVERRIDES += \
 	debug.performance.tuning=1
-
-# Power-Management
-PRODUCT_PROPERTY_OVERRIDES += \
-	pm.sleep_mode=1
 
 # Surface
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -111,7 +107,3 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # WIFI
 PRODUCT_PROPERTY_OVERRIDES += \
 	wifi.interface=wlan0
-
-# media build properties
-PRODUCT_PROPERTY_OVERRIDES += \
-	media.sf.omx-plugin=libffmpeg_omx.so,libsomxcore.so
