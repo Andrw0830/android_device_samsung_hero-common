@@ -35,5 +35,6 @@ inline const char* BtmGetDefaultName()
 }
 
 #define BTM_DEF_LOCAL_NAME BtmGetDefaultName()
+#define BTM_WBS_INCLUDED TRUE
 
 #endif
