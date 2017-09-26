@@ -154,6 +154,9 @@ TARGET_SCREEN_WIDTH := 1536
 # Lockscreen charging info: real time values
 BOARD_GLOBAL_CFLAGS += -DBATTERY_REAL_INFO
 
+# Virtual Display
+BOARD_USES_VIRTUAL_DISPLAY := true
+
 # Properties
 TARGET_SYSTEM_PROP := device/samsung/hero-common/system.prop
 
