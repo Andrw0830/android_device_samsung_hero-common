@@ -25,14 +25,15 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Graphics
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.bq.gpu_to_cpu_unsupported=1 \
-    ro.opengles.version=196610 \
-    ro.sf.lcd_density=640 \
-    debug.hwc.force_gpu=1
-
-# Hwc - not used on cm/aosp
-PRODUCT_PROPERTY_OVERRIDES += \
-    debug.hwc.winupdate=1
+	debug.composition.type=dyn \
+	ro.opengles.version=196610 \
+	video.accelerate.hw=1 \
+	debug.egl.profiler=1 \
+	ro.sf.lcd_density=640 \
+	debug.hwc.max_hw_overlays=0 \
+	debug.sf.hw=1 \
+	persist.sys.ui.hw=1 \
+	debug.egl.hw=1
 
 # Hwui
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -77,12 +78,13 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     wifi.interface=wlan0
 
-# Graphics
+# Performance += \
 PRODUCT_PROPERTY_OVERRIDES += \
-    debug.hwc.max_hw_overlays=0 \
-    debug.sf.hw=1 \
-    persist.sys.ui.hw=1 \
-    debug.egl.hw=1
+	debug.performance.tuning=1
+
+# Power-Management
+PRODUCT_PROPERTY_OVERRIDES += \
+	pm.sleep_mode=1
 	
 # Surface
 PRODUCT_PROPERTY_OVERRIDES += \
