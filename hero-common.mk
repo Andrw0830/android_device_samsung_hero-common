@@ -40,7 +40,7 @@ TARGET_SCREEN_WIDTH := 1440
 
 # Power
 PRODUCT_PACKAGES += \
-	power.exynos5
+	power.universal8890
 
 # Lights
 PRODUCT_PACKAGES += \
@@ -71,7 +71,6 @@ PRODUCT_PACKAGES += \
 # Audio
 PRODUCT_COPY_FILES += \
 	$(DEVICE_PATH)/configs/audio/audio_policy.conf:system/etc/audio_policy.conf \
-	$(DEVICE_PATH)/configs/audio/audio_effects.conf:system/etc/audio_effects.conf \
 	$(DEVICE_PATH)/configs/audio/mixer_paths.xml:system/etc/mixer_paths.xml
 
 PRODUCT_PACKAGES += \
