@@ -107,7 +107,7 @@ BOARD_HARDWARE_CLASS += device/samsung/hero-common/cmhw
 BOARD_USES_HWC_SERVICES := true
 
 # Audio
-# TARGET_AUDIOHAL_VARIANT := samsung
+TARGET_AUDIOHAL_VARIANT := samsung
 
 # Bluetooth
 BOARD_HAVE_BLUETOOTH := true
